@@ -12,6 +12,4 @@ Install countdown
 ```bash
  makepkg -si
 ```
-    
-```
-    
+# 
