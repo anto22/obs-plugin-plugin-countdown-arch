@@ -35,7 +35,11 @@ No manual compilation, no AUR helper required — just run and it handles everyt
 Clone this repository and execute the script:
 
 ```bash
+sudo pacman -S --needed base-devel git
+
+# 2) Récupérer le PKGBUILD
 git clone https://github.com/anto22/obs-plugin-plugin-countdown-arch.git
 cd obs-plugin-plugin-countdown-arch
-chmod +x install-obs-countdown.sh
-./install-obs-countdown.sh
+
+# 3) Construire et installer
+makepkg -si
