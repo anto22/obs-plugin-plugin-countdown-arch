@@ -1,4 +1,4 @@
-# Maintainer: Anthony (anto22)
+# Maintainer: Anthony (anto22) <https://github.com/anto22>
 pkgname=obs-plugin-countdown
 pkgver=2.1.1
 pkgrel=1
@@ -12,7 +12,7 @@ source=("https://github.com/ashmanix/obs-plugin-countdown/releases/download/${pk
 sha256sums=('7a9231a3dd71980dda8a75cb01f38f3b420c0f79597e1ae6503252aea8770c3a')
 
 build() {
-  cd "obs-plugin-countdown-${pkgver}"
+  cd "obs-plugin-countdown-${pkgver}-source"
 
   cmake -B build -S . \
     -DCMAKE_BUILD_TYPE=Release \
@@ -22,7 +22,7 @@ build() {
 }
 
 package() {
-  cd "obs-plugin-countdown-${pkgver}"
+  cd "obs-plugin-countdown-${pkgver}-source"
 
   DESTDIR="${pkgdir}" cmake --install build
 }
