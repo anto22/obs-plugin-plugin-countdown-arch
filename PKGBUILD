@@ -1,8 +1,8 @@
 # Maintainer: anto22 <https://github.com/anto22/>
 
 pkgname=obs-plugin-plugin-countdown-bin
-pkgver=1.3.3
-pkgrel=1
+pkgver=2.1.1
+pkgrel=2.1.1
 arch=(x86_64)
 pkgdesc="A countdown timer that displays the time using a text source"
 url="https://github.com/ashmanix/obs-plugin-countdown"
@@ -10,8 +10,8 @@ license=('GPL2')
 depends=("obs-studio")
 provides=("obs-plugin-plugin-countdown=$pkgver")
 conflicts=("obs-plugin-plugin-countdown" "obs-countdown")
-source=("https://github.com/ashmanix/obs-plugin-countdown/releases/download/v$pkgver/obs-plugin-countdown-$pkgver-linux-x86_64.deb")
-sha256sums=('2860b02381bfad36b77d0ddbda1543ad7de64344ce37decc0b26bc603685f19c')
+source=("https://github.com/ashmanix/obs-plugin-countdown/releases/download/v$pkgver/obs-plugin-countdown-$pkgver-x86_64-linux-gnu.deb")
+sha256sums=('01b623173f68acc989c851252cdd53e427d759826b46abfc3203033d1f9da501')
 
 package() {
   bsdtar -xf ${srcdir}/data.tar.gz -C ${pkgdir}/
