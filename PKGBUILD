@@ -2,7 +2,7 @@
 
 pkgname=obs-plugin-plugin-countdown-bin
 pkgver=2.1.1
-pkgrel=2.1.1
+pkgrel=1
 arch=(x86_64)
 pkgdesc="A countdown timer that displays the time using a text source"
 url="https://github.com/ashmanix/obs-plugin-countdown"
