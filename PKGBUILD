@@ -10,7 +10,7 @@ depends=('obs-studio')
 provides=("obs-plugin-countdown=${pkgver}")
 conflicts=('obs-plugin-countdown' 'obs-countdown')
 
-# ATTENTION : Vérifie que ce nom de fichier existe vraiment dans la release 2.1.1
+# ATTENTION : Vérifie que ce nom de fichier existe vraiment dans la release 2.x.x
 source=("https://github.com/ashmanix/obs-plugin-countdown/releases/download/v${pkgver}/obs-plugin-countdown-${pkgver}-x86_64-linux-gnu.deb")
 sha256sums=('a29790d93fb23f589688d9b196cfb174fed3aa92b109e0d31812a7bfa4b20e91')
 
